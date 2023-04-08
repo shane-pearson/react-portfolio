@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/Header.css';
 import NavTabs from './NavTabs';
 
+
 const styles = {
   heading: {
     background: '#9a74db',
@@ -11,16 +12,16 @@ const styles = {
     color: 'white',
     padding: '0 20px',
   },
-  
+
 };
 
 
-
-function Header() {
+function Header({currentPage, handlePageChange}) {
 
   return (
     <header style={styles.heading} className="Header">
       <h1>Welcome</h1>
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}></NavTabs>
     </header>
   );
 }
