@@ -6,7 +6,7 @@ import NavTabs from './NavTabs';
 const styles = {
   heading: {
     background: '#9a74db',
-    minHeight: 50,
+    minHeight: 100,
     lineHeight: 3.5,
     fontSize: '1.2rem',
     color: 'white',

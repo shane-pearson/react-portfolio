@@ -2,16 +2,16 @@ import React from 'react';
 
 const styles = {
   nav: {
-    margin: 'bottom',
-    fontSize: 50,
-    textAlign: 'right',
+    marginTop: -50,
+    fontSize: 25,
+    float: 'right',
     }
 
   };
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div styles={styles.nav}>
+    <div style={styles.nav}>
     <ul className="nav">
       <li className="nav-item">
         <a
