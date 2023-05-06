@@ -12,6 +12,10 @@ const styles = {
     color: 'white',
     padding: '0 20px',
   },
+  h1: {
+    padding: 20,
+    fontSize: 35,
+  }
 
 };
 
@@ -20,7 +24,7 @@ function Header({currentPage, handlePageChange}) {
 
   return (
     <header style={styles.heading} className="Header">
-      <h1>Welcome</h1>
+      <h1 style={styles.h1}>Shane Pearson's Portfolio</h1>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}></NavTabs>
     </header>
   );
