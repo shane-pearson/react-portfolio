@@ -5,7 +5,7 @@ import React from 'react';
 
 const styles = {
   footer: {
-    background: '#9a74db',
+    background: 'none',
     minHeight: 80,
     lineHeight: 3.5,
     fontSize: '1.2rem',

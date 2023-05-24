@@ -1,0 +1,33 @@
+
+body {
+    background-color: rgb(58, 69, 102) !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.column {
+    flex: 25%;
+    padding: 20px;
+  }
+
+  .animate-navbar {
+    box-shadow: 1px 1px 1px hsla(240, 20%, 8%, 0.973);
+    animation: moveDown 0.5s ease-in-out;
+    
+ }
+  
+ 
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }

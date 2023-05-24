@@ -3,12 +3,12 @@ import React from 'react';
 const styles = {
   nav: {
     marginTop: -75,
-    fontSize: 25,
+    fontSize: 18,
     float: 'right',
-    fontWeight: 'bold',
+    fontFamily: "arial",
     },
   anchor: {
-    color: 'white',
+    color: '#6fa758',
   }
 
   };
@@ -19,11 +19,11 @@ function NavTabs({ currentPage, handlePageChange }) {
     <ul className="nav">
       <li className="nav-item">
         <a style={styles.anchor}
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          href="#Home"
+          onClick={() => handlePageChange('Home')}
+          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          About
+          Home
         </a>
       </li>
       <li className="nav-item">
@@ -42,15 +42,6 @@ function NavTabs({ currentPage, handlePageChange }) {
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
-        </a>
-      </li>
-      <li className="nav-item">
-        <a style={styles.anchor}
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
         </a>
       </li>
     </ul>
