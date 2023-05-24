@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.44f8b8b5.css",
-    "main.js": "/react-portfolio/static/js/main.efdb7334.js",
+    "main.css": "/react-portfolio/static/css/main.54c1f433.css",
+    "main.js": "/react-portfolio/static/js/main.71ac47df.js",
     "static/js/787.1ed0c42c.chunk.js": "/react-portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/737977__1189357060_o.jpg": "/react-portfolio/static/media/737977_10151663423539148_1189357060_o.e0076d6026f0608fb40c.jpg",
     "static/media/tophalfofwebsite.jpg": "/react-portfolio/static/media/tophalfofwebsite.74f54f826c94735c5cfd.jpg",
     "static/media/Screenshot 2023-03-05 174629.png": "/react-portfolio/static/media/Screenshot 2023-03-05 174629.b0c87a73636b68e30a02.png",
+    "static/media/weather-app.jpg": "/react-portfolio/static/media/weather-app.2a76e5b25938212426fa.jpg",
+    "static/media/schedule-app.jpg": "/react-portfolio/static/media/schedule-app.60d3e6e5ada7bb0c3f9b.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.44f8b8b5.css.map": "/react-portfolio/static/css/main.44f8b8b5.css.map",
-    "main.efdb7334.js.map": "/react-portfolio/static/js/main.efdb7334.js.map",
+    "main.54c1f433.css.map": "/react-portfolio/static/css/main.54c1f433.css.map",
+    "main.71ac47df.js.map": "/react-portfolio/static/js/main.71ac47df.js.map",
     "787.1ed0c42c.chunk.js.map": "/react-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44f8b8b5.css",
-    "static/js/main.efdb7334.js"
+    "static/css/main.54c1f433.css",
+    "static/js/main.71ac47df.js"
   ]
 }
