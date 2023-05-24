@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
-import Stack from "react-bootstrap/Stack";
 
 const styles = {
   button: {
