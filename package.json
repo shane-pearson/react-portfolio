@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://main--statuesque-dragon-8a2ce7.netlify.app/",
   "dependencies": {
     "@react-email/render": "^0.0.7",
     "@testing-library/jest-dom": "^5.16.5",
