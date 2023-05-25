@@ -24,6 +24,7 @@ const styles = {
   },
 };
 
+
 const Contact = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -36,10 +37,10 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("https://localhost:5000/contact", {
+    let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin": "https://localhost:5000/contact",
+        "Access-Control-Allow-Origin": "http://localhost:5000/contact",
         "Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
         "Content-Type": "application/json;charset=utf-8",
