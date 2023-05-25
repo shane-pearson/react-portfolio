@@ -39,6 +39,7 @@ const Contact = () => {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
+        "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),
