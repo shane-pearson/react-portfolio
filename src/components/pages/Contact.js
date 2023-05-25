@@ -36,7 +36,7 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:3000/contact", {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "*",
