@@ -7,14 +7,7 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 app.use("/", router);
-app.listen(3000, () => console.log("Server Running"));
-
-app.use((req,res, next)=>{
-  res.setHeader('Access-Control-Allow-Origin',"https://statuesque-dragon-8a2ce7.netlify.app/#contact");
-  res.setHeader('Access-Control-Allow-Headers',"*");
-  res.header('Access-Control-Allow-Credentials', true);
-  next();
-});
+app.listen(5000, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
