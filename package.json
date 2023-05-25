@@ -47,7 +47,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://shane-pearson.github.io/react-portfolio",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "style-loader": "^3.3.2",
