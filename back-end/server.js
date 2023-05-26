@@ -47,3 +47,6 @@ const contactEmail = nodemailer.createTransport({
       }
     });
   });
+
+  const port = process.env.Port || 8080
+  app.listen(port, () => console.log(`Listening on port ${port}`))
