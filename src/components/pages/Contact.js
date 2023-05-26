@@ -37,7 +37,7 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("/contact", {
+    let response = await fetch("https://statuesque-dragon-8a2ce7.netlify.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
