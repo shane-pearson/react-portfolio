@@ -9,8 +9,6 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
-const port = process.env.PORT || 3000
-
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
@@ -48,8 +46,4 @@ const contactEmail = nodemailer.createTransport({
         res.json({ status: "Message Sent" });
       }
     });
-  });
-
-  app.listen(port, () => {
-    console.log('Server started on port '+port);
   });
