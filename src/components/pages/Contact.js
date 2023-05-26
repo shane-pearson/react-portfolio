@@ -45,8 +45,16 @@ const Contact = () => {
       body: JSON.stringify(details),
     });
     setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    if (response.ok) {
+      try {
+        let result = await response.json();
+        alert(result.status);
+      } catch (error) {
+        console.error("Error parsing response:", error);
+      }
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
   };
 
   return (
