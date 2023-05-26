@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
-app.use("/", router);
+app.use("/contact", router);
 app.listen(5000, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
