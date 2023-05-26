@@ -40,7 +40,6 @@ const Contact = () => {
     let response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin": "https://main--statuesque-dragon-8a2ce7.netlify.app/contact",
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),

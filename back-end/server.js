@@ -4,7 +4,14 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-app.use(cors());
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://main--statuesque-dragon-8a2ce7.netlify.app");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
+
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
