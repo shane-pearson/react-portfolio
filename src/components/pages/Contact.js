@@ -40,9 +40,6 @@ const Contact = () => {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin": "http://localhost:5000/contact",
-        "Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),
@@ -55,7 +52,7 @@ const Contact = () => {
   return (
       <Container className="d-flex justify-content-center flex-wrap">
         <Card style={styles.card}>
-          <Form onSubmit={handleSubmit}>
+          <Form name="contact" onSubmit={handleSubmit} netlify>
             <Col>
               <Form.Group>
                 <Form.Label style={styles.text} htmlFor="name">
