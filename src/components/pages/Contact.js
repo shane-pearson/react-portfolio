@@ -37,31 +37,22 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("https://statuesque-dragon-8a2ce7.netlify.app/contact", {
+    let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin": "https://main--statuesque-dragon-8a2ce7.netlify.app/",
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),
     });
     setStatus("Submit");
-    if (response.ok) {
-      try {
-        let result = await response.json();
-        alert(result.status);
-      } catch (error) {
-        console.error("Error parsing response:", error);
-      }
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
+    let result = await response.json();
+    alert(result.status);
   };
 
   return (
       <Container className="d-flex justify-content-center flex-wrap">
         <Card style={styles.card}>
-          <Form name="contact" onSubmit={handleSubmit} netlify>
+          <Form onSubmit={handleSubmit}>
             <Col>
               <Form.Group>
                 <Form.Label style={styles.text} htmlFor="name">
